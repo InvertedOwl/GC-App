@@ -3,13 +3,15 @@ import { Observable } from '@nativescript/core'
 export class HelloWorldModel extends Observable {
   private _counter: number
   private _message: string
+  private _originalCounter: number
 
   constructor() {
     super()
 
     // Initialize default values.
-    this._counter = 42
+    this._counter = 15
     this.updateMessage()
+    this._originalCounter = this._counter
   }
 
   get message(): string {
@@ -30,7 +32,7 @@ export class HelloWorldModel extends Observable {
 
   private updateMessage() {
     if (this._counter <= 0) {
-      this.message = 'Hoorraaay! You unlocked the NativeScript clicker achievement!'
+      this.message = 'Congrats! You pushed a button ' + this._originalCounter + " times."
     } else {
       this.message = `${this._counter} taps left`
     }

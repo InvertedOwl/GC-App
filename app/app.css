@@ -2,5 +2,5 @@
 @import '@nativescript/theme/css/default.css';
 
 Button.-primary {
-  font-size: 18;
+  font-size: 32;
 }
