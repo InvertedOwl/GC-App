@@ -1,6 +1,6 @@
-﻿@import '@nativescript/theme/css/core.css';
-@import '@nativescript/theme/css/default.css';
+﻿@import url("@nativescript/theme/css/core.css");
+@import url("@nativescript/theme/css/default.css");
 
-Button.-primary {
-  font-size: 32;
+button.primary {
+  font-size: 30;
 }
